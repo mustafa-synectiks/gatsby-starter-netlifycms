@@ -127,9 +127,19 @@ $menu-label-color: $white-ter
 
 
 // responsiveness
+// @media screen and (min-width: 1024px)
+  // .navbar-start
+    // display: none;
+
+
+
+
+
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
+  .navbar-burger
+    display: block;
 
 +mobile
   .blog-list-item header
@@ -138,3 +148,5 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+  .navbar-burger
+    display: block;

@@ -1,0 +1,75 @@
+.one{
+	background-color: #8E122F;
+	color: white;
+}
+.two{
+	background-color:#116B6B;
+	color: white;
+}
+.three{
+	background-color:#956B1A;
+	color: white;
+}
+.four{
+	background-color:#171638;
+	color: white;
+}
+.five{
+	background-color:#F47F85;
+	color: white;
+}
+
+.navbar-start .navbar-item{
+	padding:3rem;
+}
+@media screen and (min-width: 1024px){
+.navbar-burger:hover {
+		background-color: #727272;
+}
+.navbar-burger span:nth-child(1) {
+        top: calc(50% - 8px);
+}
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 6px);
+}
+.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(6px) rotate(50deg);
+}
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-50deg);
+}
+.navbar-burger {
+    display: block;
+		height: 3.25rem;
+    position: fixed;
+    width: 3.25rem;
+    margin-left: auto;
+		right: 1%;
+		background-color: #727272;
+		color: white;
+		border-radius: 50%;
+	}
+	.navbar-menu.is-active {
+    display: block;
+		position: fixed;
+    bottom: 0em;
+		left:0em;
+		background-color: black;
+		width: 100vw;
+}
+.navbar-menu {
+    display: none;
+	}
+.navbar-burger span {
+    background-color: currentColor;
+    display: flex;
+    height: 3px;
+    left: calc(30%);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: ease-out;
+    width: 24px;
+}
+}
