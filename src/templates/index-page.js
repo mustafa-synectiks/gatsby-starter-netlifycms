@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 export const IndexPageTemplate = ({
   image,
   title,
@@ -63,6 +63,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
+
     </div>
     <section className="section section--gradient">
       <div className="container">
