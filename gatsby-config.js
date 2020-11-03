@@ -17,7 +17,9 @@ module.exports = {
 
 				// Object of props that will be passed to the react-modal container
 				// See http://reactcommunity.org/react-modal/#usage
-				modalProps: {}
+				modalProps: {
+					closeTimeoutMS: 500
+				}
 			}
 		},
 		{
