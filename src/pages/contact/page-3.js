@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby-plugin-modal-routing';
-
+import one from '../../../static/img/coffee.png';
 import ConditionalLayout from '../../components/ConditionalLayout';
 // import SEO from "../components/seo"
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 const ThirdPage = () => (
 	<ConditionalLayout>
 		{/* <SEO title='Page three' /> */}
@@ -23,11 +24,20 @@ const ThirdPage = () => (
 			</li>
 		</ul>
 
-		<p>
-			Eos ea veniam deleniti possimus tenetur itaque doloremque eveniet. Et voluptatibus velit voluptatem facere.
-			Provident sint similique architecto consequuntur nulla ut rerum nesciunt.
-		</p>
-
+	 <Carousel>
+                <div>
+                    <img src={one} />
+                    {/* <p className="legend">Legend 1</p> */}
+                </div>
+                <div>
+                    <img src="assets/2.jpeg" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="assets/3.jpeg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
 		<p>
 			Nihil sint at sed tempora earum laudantium culpa et. Aperiam hic deleniti delectus fugit occaecati sunt aut
 			dolore. Culpa labore aut non saepe rem sed ea doloribus. Cum ipsum quaerat repudiandae dicta quasi sint

@@ -22,6 +22,7 @@ module.exports = {
 				}
 			}
 		},
+
 		{
 			// `gatsby-plugin-scroll-reveal`,
 			resolve: 'gatsby-plugin-scroll-reveal',
@@ -101,9 +102,15 @@ module.exports = {
 			resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
 			options: {
 				develop: true, // Activates purging in npm run develop
-				purgeOnly: [ '/all.sass' ] // applies purging only on the bulma css file
+				purgeOnly: [ '/all.scss' ] // applies purging only on the bulma css file
 			}
 		}, // must be after other CSS plugins
+		{
+			resolve: `gatsby-plugin-styled-components`,
+			options: {
+				// Add any options here
+			}
+		},
 		'gatsby-plugin-netlify' // make sure to keep it last in the array
 	]
 };

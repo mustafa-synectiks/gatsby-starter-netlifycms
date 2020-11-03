@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-
+import styled from 'styled-components';
 // import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
@@ -11,61 +11,40 @@ import { Link } from 'gatsby-plugin-modal-routing';
 
 import ConditionalLayout from '../components/ConditionalLayout';
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
-	<div>
-		<section>
-			<div className='columnOne'>
-				<Link to='/contact/page/' asModal>
-					Learn More
-				</Link>
-			</div>
-		</section>
-		<section className='section section--gradient'>
-			<div className='container'>
-				<div className='section'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<div className='content'>
-									<div className='tile'>{/* <h1 className='title'>{mainpitch.title}</h1> */}</div>
-									<div className='tile'>
-										{/* <h3 className='subtitle'>{mainpitch.description}</h3> */}
-									</div>
-								</div>
-								<div className='columns'>
-									<div className='column is-12'>
-										<Link to='/contact/page-3/'>Go to page 2</Link>
-
-										<Link to='/contact/page/' asModal>
-											Go to page 2 modal
-										</Link>
-										{/* <h3 className='has-text-weight-semibold is-size-2'>{heading}</h3> */}
-										{/* <p>{description}</p> */}
-									</div>
-								</div>
-								{/* <Features gridItems={intro.blurbs} /> */}
-								<div className='columns'>
-									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/products'>
-											See all products
-										</Link>
-									</div>
-								</div>
-								<div className='column is-12'>
-									<h3 className='has-text-weight-semibold is-size-2'>Latest stories</h3>
-									<BlogRoll />
-									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/blog'>
-											Read more
-										</Link>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+	<homeWrapper>
+		<div>
+			<section className='sliderModals'>
+				<div className='columnOne'>
+				<button>
+					<Link to='/contact/page/' asModal>
+						Learn More
+					</Link>
+				</button>
 				</div>
-			</div>
-		</section>
-	</div>
+				<div className='columnOne'>
+					<button>
+					<Link to='/contact/page/' asModal>
+						Learn More
+					</Link>
+				</button>
+				</div>
+				<div className='columnOne'>
+					<button>
+					<Link to='/contact/page/' asModal>
+						Learn More
+					</Link>
+				</button>
+				</div>
+				<div className='columnOne'>
+						<button>
+					<Link to='/contact/page/' asModal>
+						Learn More
+					</Link>
+				</button>
+				</div>
+			</section>
+		</div>
+	</homeWrapper>
 );
 
 IndexPageTemplate.propTypes = {
@@ -144,4 +123,9 @@ export const pageQuery = graphql`
 			}
 		}
 	}
+`;
+
+const homeWrapper = styled.section`
+	padding: 5rem;
+	background-color: gray !important;
 `;
