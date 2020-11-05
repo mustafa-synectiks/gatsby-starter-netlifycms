@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "./layout"
+import Layout from "./Layout"
 import { Link, ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 
 const ConditionalLayout = ({ children, ...rest }) => (
