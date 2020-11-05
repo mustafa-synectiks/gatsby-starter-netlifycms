@@ -168,21 +168,24 @@
 }
 .sliderModals{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-end;
+  // align-items: stretch;
   height:auto;
+  // width: 100vw;
   // background-color: green;
   .columnOne{
     width: 100vw;
     height: 70vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-end;
     .columnText{
       display:flex;
       flex-direction: column;
-      align-items: center;
+       align-items: center;
       justify-content: center;
       height: inherit;
     }
@@ -202,3 +205,13 @@
     }
   }
 }
+
+// @media (min-width: 1050px){
+//   .sliderModals{
+//    display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     align-items: stretch;
+//     justify-content: space-around;
+// }
+// }
