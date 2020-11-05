@@ -14,28 +14,40 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
 	<homeWrapper>
 		<div>
 			<section className='sliderModals'>
-				<div className='columnOne'>
+				<div className='columnOne skyblue'>
+			<div className='columnText'>
+				<h3>Infra Transformation</h3>
+			</div>
 				<button>
 					<Link to='/contact/page/' asModal>
 						Learn More
 					</Link>
 				</button>
 				</div>
-				<div className='columnOne'>
+				<div className='columnOne pink'>
+					<div className='columnText'>
+				<h3>ARP Transformation</h3>
+				</div>
 					<button>
 					<Link to='/contact/page/' asModal>
 						Learn More
 					</Link>
 				</button>
 				</div>
-				<div className='columnOne'>
+				<div className='columnOne ccc'>
+					<div className='columnText'>
+				<h3>Data Transformation</h3>
+				</div>
 					<button>
 					<Link to='/contact/page/' asModal>
 						Learn More
 					</Link>
 				</button>
 				</div>
-				<div className='columnOne'>
+				<div className='columnOne yellow'>
+					<div className='columnText'>
+				<h3>Process Transformation</h3>
+				</div>
 						<button>
 					<Link to='/contact/page/' asModal>
 						Learn More

@@ -154,13 +154,39 @@
   margin:0;
   padding:0;
 }
+.skyblue{
+  background-color: skyblue;
+}
+.pink{
+  background-color: pink;
+}
+.ccc{
+  background-color: #ccc;
+}
+.yellow{
+  background-color: yellow;
+}
 .sliderModals{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-end;
-  width: 100vw;
-  height:50vh;
-  background-color: green;
+  height:auto;
+  // background-color: green;
+  .columnOne{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .columnText{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: inherit;
+    }
+  }
   button{
     background-color: wheat;
     color: rgba(0,0,0,0.5);

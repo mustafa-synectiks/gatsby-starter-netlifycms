@@ -29,11 +29,18 @@
 .navbar-burger span:nth-child(1) {
         top: calc(50% - 8px);
 }
+.navbar-burger span:nth-child(2) {
+        top: calc(50% - 1px);
+}
+
 .navbar-burger span:nth-child(3) {
     top: calc(50% + 6px);
 }
 .navbar-burger.is-active span:nth-child(1) {
     transform: translateY(6px) rotate(50deg);
+}
+.navbar-burger.is-active span:nth-child(2) {
+    transform: translateX(56px);
 }
 .navbar-burger.is-active span:nth-child(3) {
     transform: translateY(-8px) rotate(-50deg);
@@ -52,9 +59,8 @@
 	.navbar-menu.is-active {
     display: block;
 		position: fixed;
-    bottom: 0em;
+    bottom: 2.9em;
 		left:0em;
-		background-color: black;
 		width: 100vw;
 }
 .navbar-menu {
