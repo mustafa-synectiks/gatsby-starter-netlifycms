@@ -56,6 +56,10 @@
 		color: white;
 		border-radius: 50%;
 	}
+
+.dummy{
+	color: white;
+}
 	.navbar-menu.is-active {
     display: block;
 		position: fixed;
