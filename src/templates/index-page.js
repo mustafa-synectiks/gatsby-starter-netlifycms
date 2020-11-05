@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import styled from 'styled-components';
 // import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
@@ -11,7 +10,6 @@ import { Link } from 'gatsby-plugin-modal-routing';
 
 import ConditionalLayout from '../components/ConditionalLayout';
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
-	<homeWrapper>
 		<div>
 			<section className='sliderModals'>
 				<div className='columnOne skyblue'>
@@ -56,7 +54,6 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
 				</div>
 			</section>
 		</div>
-	</homeWrapper>
 );
 
 IndexPageTemplate.propTypes = {
@@ -137,7 +134,3 @@ export const pageQuery = graphql`
 	}
 `;
 
-const homeWrapper = styled.section`
-	padding: 5rem;
-	background-color: gray !important;
-`;
