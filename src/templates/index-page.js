@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
 				<h3>ARP Transformation</h3>
 				</div>
 					<button>
-					<Link to='/contact/page/' asModal>
+					<Link to='/contact/page-3/' asModal>
 						Learn More
 					</Link>
 				</button>

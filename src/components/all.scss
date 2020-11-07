@@ -168,8 +168,8 @@
 }
 .sliderModals{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  // flex-direction: column;
+  // flex-wrap: wrap;
   justify-content: flex-start;
   // align-items: stretch;
   height:auto;
@@ -191,7 +191,6 @@
     }
   }
   button{
-    background-color: wheat;
     color: rgba(0,0,0,0.5);
     font-weight: 600;
     border: none;
@@ -205,6 +204,8 @@
     }
   }
 }
+
+
 
 // @media (min-width: 1050px){
 //   .sliderModals{
