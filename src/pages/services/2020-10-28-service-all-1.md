@@ -6,6 +6,6 @@ description: Service page is added
 featuredpost: true
 featuredimage: /img/blog-index.jpg
 tags:
-  - Services
+  - services
 ---
 Service page is added and will be added to website soon.!

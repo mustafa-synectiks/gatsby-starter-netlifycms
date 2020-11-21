@@ -6,7 +6,7 @@ description: This descriptioin is written from synectiks new office
 featuredpost: false
 featuredimage: /img/products-grid2.jpg
 tags:
-  - Latest
+  - blog
 ---
 This site working on netllify login with particular email id.
 
