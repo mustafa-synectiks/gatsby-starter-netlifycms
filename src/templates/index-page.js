@@ -10,50 +10,50 @@ import { Link } from 'gatsby-plugin-modal-routing';
 
 import ConditionalLayout from '../components/ConditionalLayout';
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro }) => (
-		<div>
-			<section className='sliderModals'>
-				<div className='columnOne skyblue'>
-			<div className='columnText'>
-				<h3>Infra Transformation</h3>
-			</div>
+	<div>
+		<section className='sliderModals'>
+			<div className='columnOne skyblue'>
+				<div className='columnText'>
+					<h3>Infra Transformation</h3>
+				</div>
 				<button>
 					<Link to='/contact/page/' asModal>
 						Learn More
 					</Link>
 				</button>
+			</div>
+			<div className='columnOne pink'>
+				<div className='columnText'>
+					<h3>ARP Transformation</h3>
 				</div>
-				<div className='columnOne pink'>
-					<div className='columnText'>
-				<h3>ARP Transformation</h3>
-				</div>
-					<button>
+				<button>
 					<Link to='/contact/page-3/' asModal>
 						Learn More
 					</Link>
 				</button>
+			</div>
+			<div className='columnOne ccc'>
+				<div className='columnText'>
+					<h3>Data Transformation</h3>
 				</div>
-				<div className='columnOne ccc'>
-					<div className='columnText'>
-				<h3>Data Transformation</h3>
-				</div>
-					<button>
+				<button>
 					<Link to='/contact/page/' asModal>
 						Learn More
 					</Link>
 				</button>
+			</div>
+			<div className='columnOne yellow'>
+				<div className='columnText'>
+					<h3>Process Transformation</h3>
 				</div>
-				<div className='columnOne yellow'>
-					<div className='columnText'>
-				<h3>Process Transformation</h3>
-				</div>
-						<button>
+				<button>
 					<Link to='/contact/page/' asModal>
 						Learn More
 					</Link>
 				</button>
-				</div>
-			</section>
-		</div>
+			</div>
+		</section>
+	</div>
 );
 
 IndexPageTemplate.propTypes = {
@@ -133,4 +133,3 @@ export const pageQuery = graphql`
 		}
 	}
 `;
-
