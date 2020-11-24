@@ -67,7 +67,7 @@ export default () => (
 			query BlogRollQuery {
 				allMarkdownRemark(
 					sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { tags: { eq: "blog" } } }
+					filter: { frontmatter: { tags: { eq: "services" } } }
 				) {
 					edges {
 						node {

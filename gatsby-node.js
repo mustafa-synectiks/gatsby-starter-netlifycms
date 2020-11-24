@@ -63,11 +63,11 @@ exports.createPages = ({ actions, graphql }) => {
 				path: tagPath,
 				component: path.resolve(`src/templates/tags.js`),
 				context: {
-					tag,
-					limit: postsPerPage,
-					skip: i * postsPerPage,
-					numPages,
-					currentPage: i + 1
+					tag
+					// limit: postsPerPage,
+					// skip: i * postsPerPage,
+					// numPages,
+					// currentPage: i + 1
 				}
 			});
 		});
