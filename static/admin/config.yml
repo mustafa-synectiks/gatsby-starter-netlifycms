@@ -1,6 +1,12 @@
 backend:
   name: git-gateway
   branch: master
+    open_authoring: true
+
+local_backend: true
+
+site_url: https://kind-wright-fbd3e9.netlify.app/
+
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
